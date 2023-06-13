@@ -17,4 +17,10 @@ GPT API is a powerful tool that can be used to analyze large amounts of data and
 You can use GPT API to analyze the data in your database and provide recommendations to users based on their queries and commands.
 Overall, using LLM with LangChain and GPT API can help you create a powerful and secure database system that is easy to use and provides meaningful insights to users. As a software engineer, it is important to stay up-to-date with the latest technologies and tools to ensure that you are delivering high-quality software that meets the needs of your users.
 
-Installation
+# Installations:
+
+Install dependencies using requirements.txt
+
+```shell
+pip install -r requirements.txt
+```
