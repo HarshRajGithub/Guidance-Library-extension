@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Database Connection</title>
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+<h1>Database Connection</h1>
+<form action="{{ url_for('connect') }}" method="post">
+<label for="server">Server:</label>
+<input type="text" id="server" name="server"><br>
+
+<label for="database">Database:</label>
+<input type="text" id="database" name="database"><br>
+
+<label for="username">Username:</label>
+<input type="text" id="username" name="username"><br>
+
+<label for="password">Password:</label>
+<input type="password" id="password" name="password"><br>
+
+<input type="submit" value="Connect">
+</form>
+<h2>Chatbot if don't want to connect to database</h2>
+<form method="POST" action="{{url_for('chatbot')}}">
+    <label for="message">Message:</label>
+    <input type="text" id="message" name="message" required>
+    <button type="submit">Chat</button>
+</form>
+</body>
+</html>
